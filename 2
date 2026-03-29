@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include "2laba.h"
+
+int main(int argc, char *argv[]) {
+	double perim, ploshad;
+	double a,b,c;
+	
+	printf("Vvedite dlinny otreska: a: ");
+	scanf("%lf", &a);
+	printf("Vvedite dlinny otreska: b: ");
+	scanf("%lf", &b);
+	printf("Vvedite dlinny otreska: c: ");
+	scanf("%lf", &c);
+	
+	if (prov(a,b,c)){
+		perim = per(a, b, c);
+		ploshad = plos(a, b, c);
+		printf("Perimetr: %lf\nPloshad %lf", perim, ploshad);
+	}
+	else {
+	printf("Not corekt input");
+}
+	return 0;
+}
