@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int main(int argc, char *argv[]) {
+	int i;
+	
+	printf("input str: ");
+	char str[81];
+	gets(str);
+	
+	for (i = 0; i < strlen(str); i++){
+		if (str[i] == 'a')
+			str[i] = toupper(str[i]);
+		}
+	//printf("simvol: %d: %c", i, str[i]);
+		printf("%c", str)
+	return 0;
+}
