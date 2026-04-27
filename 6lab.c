@@ -21,14 +21,11 @@ int main(int argc, char *argv[]) {
 	struct humen name2[n];
 	int i, j;
 	struct humenp sort;
-	
 	for (i = 0; i < n; i++){
 		printf("Input name: ");
 		scanf("%s", humen[i].name);
-		
 		printf("Input famil: ");
 		scanf("%s", humen[i].name1);
-		
 		printf("Input eyar: ");
 		scanf("%s", &humen[i].ego);
 }
